@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
 
 nav {
-  padding: 30px;
+  padding: 40px;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
@@ -25,41 +25,5 @@ nav {
         text-decoration: underline;
       }
     }
-  }
-}
-
-header {
-  font-family: "Sarabun", sans-serif;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 8%,
-    rgba(240, 239, 239, 1) 38%,
-    rgba(222, 221, 221, 1) 65%
-  );
-  .wrapper-hero-header {
-    background-color: gray;
-  }
-
-  .hero-header-title {
-    font-size: 70px;
-    letter-spacing: 6px;
-    line-height: 80px;
-  }
-
-  .hero-header-title-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  button {
-    margin-top: 50px;
-    padding: 7px 65px 7px 65px;
-    background-color: transparent;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1px;
   }
 }
