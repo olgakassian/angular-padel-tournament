@@ -7,10 +7,21 @@ import { HeroHeaderComponent } from './hero-header/hero-header.component';
 import { EventDetailsComponent } from './event-details/event-details.component';
 import { FormComponent } from './form/form.component';
 import { TimerComponent } from './timer/timer.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CharityComponent } from './charity/charity.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HeroHeaderComponent, EventDetailsComponent, FormComponent, TimerComponent],
-  imports: [BrowserModule, NgbModule],
+  declarations: [
+    AppComponent,
+    HeroHeaderComponent,
+    EventDetailsComponent,
+    FormComponent,
+    TimerComponent,
+    CharityComponent,
+    FooterComponent,
+  ],
+  imports: [BrowserModule, NgbModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

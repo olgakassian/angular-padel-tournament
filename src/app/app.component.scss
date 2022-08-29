@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
+body {
+  font-family: "Sarabun", sans-serif;
+}
 
 nav {
-  padding: 40px;
+  padding-top: 50px !important;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
@@ -20,10 +23,43 @@ nav {
         font-weight: 600;
         color: black;
         margin: 0px 15px 0px 15px;
+        transition: transform 0.2s; /* Animation */
       }
       .nav-item:hover {
-        text-decoration: underline;
+        transform: scale(
+          1.1
+        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       }
     }
   }
+}
+
+.btn-padel {
+  color: white;
+  border: 2px solid white;
+  margin-top: 30px;
+  padding: 10px 75px 10px 75px;
+  background-color: transparent;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.btn-padel:hover {
+  color: #d8e144;
+  border: 2px solid #d8e144;
+}
+
+.btn-padel-secondary {
+  margin-top: 50px;
+  padding: 10px 75px 10px 75px;
+  background-color: transparent;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.btn-padel-secondary:hover {
+  color: #d8e144;
+  border: 2px solid #d8e144;
 }

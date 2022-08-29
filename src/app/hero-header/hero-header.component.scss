@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
 header {
   height: 90vh;
   font-family: "Sarabun", sans-serif;
@@ -13,9 +14,18 @@ header {
   }
 
   .hero-header-title {
-    font-size: 70px;
+    font-size: 75px;
+    font-weight: 700;
     letter-spacing: 6px;
     line-height: 80px;
+
+    h1 {
+      div {
+        width: 200px;
+        height: 200px;
+        transition: all 0.5s ease;
+      }
+    }
   }
 
   .hero-header-title-btn {
@@ -23,15 +33,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-  }
-
-  button {
-    margin-top: 50px;
-    padding: 7px 65px 7px 65px;
-    background-color: transparent;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1px;
   }
 
   .hero-header-img {
@@ -42,4 +43,64 @@ header {
     font-weight: 500;
     letter-spacing: 2px;
   }
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  30% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  65% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  80% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  30% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  65% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  80% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.swing:hover {
+  color: #d8e144;
+  -webkit-animation: swing 5s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }

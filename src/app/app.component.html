@@ -1,28 +1,37 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">PADEL</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNavAltMarkup"
-    aria-controls="navbarNavAltMarkup"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="#">The Event</a>
-      <a class="nav-item nav-link" href="#">Register</a>
-      <a class="nav-item nav-link" href="#">Giving Back</a>
-      <a class="nav-item nav-link" href="#">Contact</a>
+  <div class="container-lg">
+    <a class="navbar-brand" href="#"
+      ><img
+        src="https://i.postimg.cc/Y9mrnsKN/logo-temporary-padel-01.png"
+        alt="Padel in Lisbon"
+        width="100px"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">The Event</a>
+        <a class="nav-item nav-link" href="#">Register</a>
+        <a class="nav-item nav-link" href="#">Giving Back</a>
+        <a class="nav-item nav-link" href="#">Contact</a>
+      </div>
     </div>
   </div>
 </nav>
 <app-hero-header></app-hero-header>
 <main>
   <app-timer></app-timer>
-  <app-event-details></app-event-details>
-  <app-form></app-form>
+  <app-event-details (newEvent)="buttonClicked()"></app-event-details>
+  <app-form [state]="buttonState"></app-form>
+  <app-charity></app-charity>
 </main>
+<app-footer></app-footer>

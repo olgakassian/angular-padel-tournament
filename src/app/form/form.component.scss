@@ -1,0 +1,40 @@
+.wrapper-form {
+  padding: 100px 0px 100px 0px;
+
+  .register-form-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // display: flex;
+    // flex-direction: column;
+    h4 {
+      font-size: 50px;
+    }
+  }
+
+  .register-form-form {
+    padding: 20px 100px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    form {
+      label {
+        font-size: 15px;
+        padding: 5px 0px 0px 0px;
+        letter-spacing: 1px;
+        font-weight: 500;
+      }
+
+      input {
+        border: none;
+        border-bottom: 2px solid black;
+        margin-bottom: 20px;
+        padding: 5px 0px 5px 0px;
+        width: 100%;
+      }
+      input::placeholder {
+        color: #c0c0c0;
+        font-weight: 100;
+      }
+    }
+  }
+}

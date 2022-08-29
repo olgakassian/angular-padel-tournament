@@ -1,0 +1,117 @@
+<div class="container-lg wrapper-form" *ngIf="state" id="registerForm">
+  <div class="row">
+    <div class="col-12 col-sm-6 register-form-intro">
+      <div>
+        <h4>
+          REGISTER FOR <br />
+          PADEL
+        </h4>
+      </div>
+      <div>
+        For any questions contact <br />
+        John Doe
+        <br />
+        <br />
+        info-evident@valtech.com <br />
+        +351 93 215 5400
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 register-form-form">
+      <form [formGroup]="registerForm">
+        <label for="companyName">COMPANY NAME </label> <br />
+        <input
+          id="companyName"
+          type="text"
+          formControlName="companyName"
+          placeholder="Valtech Portugal"
+        />
+        <br />
+        <label for="teamName">TEAM NAME </label> <br />
+        <input
+          id="teamName"
+          type="text"
+          formControlName="teamName"
+          placeholder="Cherifs"
+        />
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <label for="playerName1">PLAYER 1 </label> <br />
+            <input
+              id="playerName1"
+              type="text"
+              formControlName="playerName1"
+              placeholder="Francisco Brito"
+            />
+            <br />
+            <label for="playerName2">PLAYER 2 </label> <br />
+            <input
+              id="playerName2"
+              type="text"
+              formControlName="playerName2"
+              placeholder="Eduardo Carneiro"
+            />
+            <br />
+            <label for="playerName3">PLAYER 3 </label> <br />
+            <input
+              id="playerName3"
+              type="text"
+              formControlName="playerName3"
+              placeholder="Olga Kassian"
+            />
+            <br />
+            <label for="playerName4">PLAYER 4 </label> <br />
+            <input
+              id="playerName4"
+              type="text"
+              formControlName="playerName4"
+              placeholder="Carolina Cerejo"
+            />
+          </div>
+
+          <div class="col-12 col-sm-6">
+            <label for="playerEmail1">EMAIL 1 </label> <br />
+            <input
+              id="playerEmail1"
+              type="text"
+              formControlName="playerEmail1"
+              placeholder="francisco@valtech.com"
+            />
+            <br />
+            <label for="playerEmail2">EMAIL 2 </label> <br />
+            <input
+              id="playerEmail2"
+              type="text"
+              formControlName="playerEmail2"
+              placeholder="eduardo@valtech.com"
+            />
+            <br />
+            <label for="playerEmail3">EMAIL 3 </label> <br />
+            <input
+              id="playerEmail3"
+              type="text"
+              formControlName="playerEmail3"
+              placeholder="olga@valtech.com"
+            />
+            <br />
+            <label for="playerEmail4">EMAIL 4 </label> <br />
+            <input
+              id="playerEmail4"
+              type="text"
+              formControlName="playerEmail4"
+              placeholder="carolina@valtech.com"
+            />
+          </div>
+        </div>
+        <label for="responsibleEmail"> RESPONSIBLE EMAIL </label> <br />
+        <input
+          id="responsibleEmail"
+          type="text"
+          formControlName="respoNsibleEmail"
+          placeholder="melina@valtech.com"
+        />
+        <br />
+      </form>
+      <button class="btn-padel-secondary">SUBMIT</button>
+    </div>
+  </div>
+</div>

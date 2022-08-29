@@ -31,10 +31,20 @@ export class TimerComponent implements OnInit, OnDestroy {
     this.secondsToDday = Math.floor(
       (timeDifference / this.milliSecondsInASecond) % this.secondsInAMinute
     );
+
+    if (this.secondsToDday < 10) {
+      this.secondsToDday = `0` + this.secondsToDday;
+    }
+
     this.minutesToDday = Math.floor(
       (timeDifference / (this.milliSecondsInASecond * this.minutesInAnHour)) %
         this.secondsInAMinute
     );
+
+    if (this.minutesToDday < 10) {
+      this.minutesToDday = `0` + this.minutesToDday;
+    }
+
     this.hoursToDday = Math.floor(
       (timeDifference /
         (this.milliSecondsInASecond *
@@ -42,6 +52,11 @@ export class TimerComponent implements OnInit, OnDestroy {
           this.secondsInAMinute)) %
         this.hoursInADay
     );
+
+    if (this.hoursToDday < 10) {
+      this.hoursToDday = `0` + this.hoursToDday;
+    }
+
     this.daysToDday = Math.floor(
       timeDifference /
         (this.milliSecondsInASecond *
@@ -49,6 +64,10 @@ export class TimerComponent implements OnInit, OnDestroy {
           this.secondsInAMinute *
           this.hoursInADay)
     );
+
+    if (this.daysToDday < 10) {
+      this.daysToDday = `0` + this.daysToDday;
+    }
   }
   ngOnInit() {
     this.subscription = interval(1000).subscribe((x) => {

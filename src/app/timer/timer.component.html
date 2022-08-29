@@ -1,6 +1,22 @@
 <div class="timer">
-  <span id="days"> {{ daysToDday }} </span>
-  <span id="hours"> {{ hoursToDday }} </span>
-  <span id="minutes"> {{ minutesToDday }} </span>
-  <span id="seconds"> {{ secondsToDday }} </span>
+  <div class="row">
+    <div class="col-3 timer-block">
+      <span id="days">
+        {{ daysToDday }}
+      </span>
+      <span class="timer-caption">days</span>
+    </div>
+    <div class="col-3 timer-block">
+      <span id="hours"> {{ hoursToDday }} </span>
+      <span class="timer-caption">hours</span>
+    </div>
+    <div class="col-3 timer-block">
+      <span id="minutes"> {{ minutesToDday }} </span>
+      <span class="timer-caption">minutes</span>
+    </div>
+    <div class="col-3 timer-block">
+      <span id="seconds"> {{ secondsToDday }} </span>
+      <span class="timer-caption">seconds</span>
+    </div>
+  </div>
 </div>

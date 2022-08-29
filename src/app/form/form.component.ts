@@ -1,15 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  styleUrls: ['./form.component.scss'],
 })
-export class FormComponent implements OnInit {
+export class FormComponent {
+  @Input() state: boolean = true;
 
-  constructor() { }
+  registerForm = new FormGroup({
+    companyName: new FormControl(''),
+    teamName: new FormControl(''),
+    playerName1: new FormControl(''),
+    playerEmail1: new FormControl(''),
+    playerName2: new FormControl(''),
+    playerEmail2: new FormControl(''),
+    playerName3: new FormControl(''),
+    playerEmail3: new FormControl(''),
+    playerName4: new FormControl(''),
+    playerEmail4: new FormControl(''),
+    responsibleEmail: new FormControl(''),
+  });
 
-  ngOnInit(): void {
-  }
-
+  constructor() {}
 }
