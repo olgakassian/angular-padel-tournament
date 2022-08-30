@@ -14,9 +14,11 @@
       <div class="col-7 overflow-details-block">
         <div class="vid"></div>
         <video
-          autoplay
-          muted
           loop
+          muted
+          autoplay
+          oncanplay="this.play()"
+          onloadedmetadata="this.muted = true"
           src="https://cdn.shopify.com/videos/c/o/v/cf05abebf3154f56aa0f22a06ee93136.mov"
         ></video>
         <div class="register-button">
