@@ -1,60 +1,71 @@
 section.wrapper-event-details {
-  // background: rgb(255, 255, 255);
-  // background: linear-gradient(
-  //   90deg,
-  //   rgba(255, 255, 255, 1) 8%,
-  //   rgba(240, 239, 239, 1) 38%,
-  //   rgba(222, 221, 221, 1) 65%
-  // );
-  background-color: black;
   color: white;
-  height: 60vh;
   display: flex;
   align-items: center;
 
-  .event-info-block {
+  .block-event-details {
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 200px 0px 200px;
+    margin: 150px 0px 150px 0px;
+    height: 300px;
 
-    .event-details {
+    .description {
       display: flex;
       flex-direction: column;
+      justify-content: flex-end;
+      margin-left: 5px;
+      .date {
+        font-size: 60px;
+        font-weight: 700;
+      }
+
+      .hours {
+        font-size: 15px;
+        font-weight: 800;
+      }
+      // .address,
+      // .price {
+      //   font-size: 15px;
+      //   font-weight: 200;
+      // }
+      .activities {
+        font-size: 15px;
+      }
+    }
+
+    .overflow-details-block {
+      height: 400px;
+      width: 700px;
+      background-image: url("./ben-hershey-K9HgyI3qmqA-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
       justify-content: center;
       align-items: center;
-      color: black;
-      .event-details-description {
-        margin-top: 30px;
-        font-weight: 500;
-        font-size: 20px;
-        height: 100px;
-        text-align: center;
-      }
-      svg {
-        width: 80px;
-        height: 80px;
-        fill: #d8e144;
-      }
-    }
-  }
-  .register-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    button {
-      margin-top: 50px;
-      padding: 10px 75px 10px 75px;
-      background-color: transparent;
-      font-size: 19px;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
+      .register-button {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        button {
+          border: 2px solid white;
+          color: white;
+          padding: 10px 75px 10px 75px;
+          background-color: transparent;
+          font-size: 19px;
+          font-weight: 700;
+          letter-spacing: 1px;
+        }
 
-    button:hover {
-      color: #d8e144;
-      border: 2px solid #d8e144;
+        button:hover {
+          color: #d8e144;
+          border: 2px solid #d8e144;
+        }
+      }
     }
   }
 }

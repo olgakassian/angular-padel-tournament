@@ -1,24 +1,44 @@
 .wrapper-footer {
   font-family: "Sarabun", sans-serif;
-
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 8%,
-    rgba(240, 239, 239, 1) 38%,
-    rgba(222, 221, 221, 1) 65%
-  );
+  background-color: black;
+  color: white;
   display: flex;
   justify-content: left;
   flex-direction: column;
-  padding: 50px;
-  ul {
-    padding: 0px;
-    li {
-      list-style: none;
+  padding: 40px 50px 40px 50px;
+  margin-top: 50px;
+  .col-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .logo-footer-wrapper {
+    img {
+      width: 200px;
+      padding-left: -5px;
+      padding-bottom: 20px;
+    }
+    border-bottom: 2px solid white;
+    margin-bottom: 30px;
+  }
+
+  .footer-section {
+    margin-bottom: 10px;
+    h6 {
+      font-weight: 600;
+    }
+    span {
+      font-size: 14px;
+    }
+    ul {
+      font-size: 14px;
+      padding: 0px;
+      li {
+        list-style: none;
+      }
     }
   }
   .social-icons {
+    padding-top: 30px;
     svg {
       width: 50px;
     }

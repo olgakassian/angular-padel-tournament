@@ -10,6 +10,7 @@ import { TimerComponent } from './timer/timer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CharityComponent } from './charity/charity.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
     TimerComponent,
     CharityComponent,
     FooterComponent,
+    AboutComponent,
   ],
   imports: [BrowserModule, NgbModule, ReactiveFormsModule],
   providers: [],
