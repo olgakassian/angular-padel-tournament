@@ -21,15 +21,13 @@ nav {
     .navbar-nav {
       .nav-item {
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: 500;
         color: black;
         margin: 0px 15px 0px 15px;
         transition: transform 0.2s; /* Animation */
       }
       .nav-item:hover {
-        transform: scale(
-          1.1
-        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        text-decoration: underline;
       }
     }
   }
