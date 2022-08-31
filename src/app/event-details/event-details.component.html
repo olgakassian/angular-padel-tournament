@@ -1,31 +1,33 @@
 <section class="wrapper-event-details">
   <div class="container-lg">
-    <div class="block-event-details">
-      <!-- <div class="block-event-details"> -->
-      <div class="col-4 description">
-        <div class="date">OCT15</div>
-        <div class="hours">14H-19H</div>
-        <div class="activities">
-          Join us for an afternoon playing padel, <br />
-          networking and finish with barbecue and a drink. <br />
-          <br />
-          <b> #padel #networking #barbecue</b>
+    <div class="row">
+      <div class="block-event-details">
+        <div class="col-6 col-md-4 description">
+          <div class="date">OCT15</div>
+          <div class="hours">14H-19H</div>
+          <div class="activities">
+            Join us for an afternoon playing padel, <br />
+            networking and finish with barbecue and a drink. <br />
+            <br />
+            <b> #padel #networking #barbecue</b>
+          </div>
         </div>
-      </div>
-      <div class="col-7 overflow-details-block">
-        <video
-          loop
-          muted
-          autoplay
-          oncanplay="this.play()"
-          onloadedmetadata="this.muted = true"
-          src="https://cdn.shopify.com/videos/c/o/v/cf05abebf3154f56aa0f22a06ee93136.mov"
-        ></video>
-        <div class="register-button">
-          <button type="button" (click)="displayForm(true)">REGISTER</button>
+        <div class="col-6 col-md-7 overflow-details-block">
+          <video
+            loop
+            muted
+            autoplay
+            oncanplay="this.play()"
+            onloadedmetadata="this.muted = true"
+            src="https://cdn.shopify.com/videos/c/o/v/cf05abebf3154f56aa0f22a06ee93136.mov"
+          ></video>
+          <div class="register-button">
+            <button class="btn-padel" type="button" (click)="displayForm(true)">
+              REGISTER
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- </div> -->
 </section>
