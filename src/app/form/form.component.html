@@ -30,12 +30,32 @@
     </div>
     <div class="col-12 col-sm-6 register-form-form">
       <form [formGroup]="registerForm">
-        <label for="companyName">COMPANY NAME </label> <br />
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <label for="companyName">COMPANY NAME </label> <br />
+            <input
+              id="companyName"
+              type="text"
+              formControlName="companyName"
+              placeholder="Valtech Portugal"
+            />
+          </div>
+          <div class="col-12 col-sm-6">
+            <label for="companyNIF">NIF </label> <br />
+            <input
+              id="companyNIF"
+              type="number"
+              formControlName="companyNIF"
+              placeholder="515888494"
+            />
+          </div>
+        </div>
+        <label for="legalAddress">LEGAL ADDRESS</label> <br />
         <input
-          id="companyName"
+          id="legalAddress"
           type="text"
-          formControlName="companyName"
-          placeholder="Valtech Portugal"
+          formControlName="legalAddress"
+          placeholder="Campo Pequeno 48 7 andar, 1000-081 Lisboa"
         />
         <br />
         <label for="teamName">TEAM NAME </label> <br />
@@ -70,14 +90,6 @@
               formControlName="playerName3"
               placeholder="Olga Kassian"
             />
-            <br />
-            <label for="playerName4">PLAYER 4 </label> <br />
-            <input
-              id="playerName4"
-              type="text"
-              formControlName="playerName4"
-              placeholder="Carolina Cerejo"
-            />
           </div>
 
           <div class="col-12 col-sm-6">
@@ -103,14 +115,6 @@
               type="text"
               formControlName="playerEmail3"
               placeholder="olga@valtech.com"
-            />
-            <br />
-            <label for="playerEmail4">EMAIL 4 </label> <br />
-            <input
-              id="playerEmail4"
-              type="text"
-              formControlName="playerEmail4"
-              placeholder="carolina@valtech.com"
             />
           </div>
         </div>

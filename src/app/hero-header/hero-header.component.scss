@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
 header {
   font-family: "Sarabun", sans-serif;
   height: 90vh;
-
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
@@ -10,6 +8,8 @@ header {
     rgba(240, 239, 239, 1) 38%,
     rgba(222, 221, 221, 1) 65%
   );
+  display: flex;
+  align-items: center;
   .wrapper-hero-header {
     background-color: gray;
   }
@@ -22,9 +22,9 @@ header {
 
     h1 {
       div {
-        width: 200px;
         height: 200px;
         transition: all 0.5s ease;
+        width: 200px;
       }
     }
   }
@@ -34,15 +34,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-  }
-
-  .hero-header-img {
-    padding: 60px 0px 0px 0px;
-  }
-  .location-header {
-    font-size: 25px;
-    font-weight: 500;
-    letter-spacing: 2px;
   }
 }
 

@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+  .block-event-details {
+    height: 100% !important;
+  }
+}
+
 section.wrapper-event-details {
   color: white;
   display: flex;
@@ -5,79 +11,68 @@ section.wrapper-event-details {
 
   .block-event-details {
     background-color: black;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 150px 0px 150px 0px;
-    height: 300px;
+  }
 
-    .description {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      margin-left: 5px;
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 5px;
 
-      .date {
-        font-size: 60px;
-        font-weight: 700;
-      }
-
-      .hours {
-        font-size: 15px;
-        font-weight: 800;
-      }
-
-      // .address,
-      // .price {
-      //   font-size: 15px;
-      //   font-weight: 200;
-      // }
-
-      .activities {
-        font-size: 15px;
-      }
+    .date {
+      font-size: 60px;
+      font-weight: 700;
     }
 
-    .overflow-details-block {
-      height: 400px;
-      width: 700px;
-      // background-image: url("./ben-hershey-K9HgyI3qmqA-unsplash.jpg");
-      // background-repeat: no-repeat;
-      // background-size: cover;
-      // background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
+    .hours {
+      font-size: 15px;
+      font-weight: 800;
+    }
+    .activities {
+      font-size: 15px;
+    }
+  }
 
-      video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+  .overflow-details-block {
+    height: 400px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .register-button {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      button {
+        border: 2px solid white;
+        color: white;
+        padding: 10px 75px 10px 75px;
+        background-color: transparent;
+        font-size: 19px;
+        font-weight: 700;
+        letter-spacing: 1px;
       }
 
-      .register-button {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        button {
-          border: 2px solid white;
-          color: white;
-          padding: 10px 75px 10px 75px;
-          background-color: transparent;
-          font-size: 19px;
-          font-weight: 700;
-          letter-spacing: 1px;
-        }
-
-        button:hover {
-          color: #d8e144;
-          border: 2px solid #d8e144;
-        }
+      button:hover {
+        color: #d8e144;
+        border: 2px solid #d8e144;
       }
     }
   }

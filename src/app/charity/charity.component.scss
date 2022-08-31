@@ -1,10 +1,33 @@
+@media (max-width: 600px) {
+  h4 {
+    font-size: 50px !important;
+    line-height: 50px !important;
+  }
+
+  h5 {
+    margin-top: 40px !important;
+    font-size: 25px !important;
+  }
+  .container-lg {
+    padding: 10px !important;
+  }
+
+  .charity-content-block {
+    padding: 20px;
+  }
+
+  div.charity-left-block {
+    padding-left: 10px !important;
+  }
+}
+
 section.wrapper-charity {
   font-family: "Sarabun", sans-serif;
   color: white;
-  display: flex;
+  display: block;
   align-items: center;
 
-  .backgroud-wrapper {
+  .background-wrapper {
     background-image: url("./AdobeStock_233181659.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,11 +46,8 @@ section.wrapper-charity {
         font-size: 70px;
         color: white;
         line-height: 60px;
-        // .charity {
-        //   color: #d8e144;
-        //   text-decoration: underline;
-        // }
       }
+
       h5 {
         margin-top: 60px;
         font-size: 30px;
@@ -37,21 +57,6 @@ section.wrapper-charity {
         font-weight: 200;
         text-align: justify;
       }
-      //   button {
-      //     color: white;
-      //     border: 2px solid white;
-      //     margin-top: 30px;
-      //     padding: 10px 75px 10px 75px;
-      //     background-color: transparent;
-      //     font-size: 19px;
-      //     font-weight: 700;
-      //     letter-spacing: 1px;
-      //   }
-      //   button:hover {
-      //     color: #d8e144;
-      //     border: 2px solid #d8e144;
-      //   }
-      // }
     }
   }
 }
