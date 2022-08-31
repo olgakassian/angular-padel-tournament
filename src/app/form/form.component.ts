@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+declare let Email: any;
 
 @Component({
   selector: 'app-form',
@@ -24,4 +25,22 @@ export class FormComponent {
   });
 
   constructor() {}
+
+  submitForm() {
+    console.log(this.registerForm);
+    const formValues = this.registerForm.value;
+
+    Email.send({
+      SecureToken: '5612e7ec-0912-46f7-81f4-c2b7814a998c',
+      To: 'olgakassian@gmail.com',
+      From: 'olgakassian@gmail.com',
+      Subject: `New Submission from ${formValues.companyName}`,
+      Body: `
+      Company Name: ${formValues.companyName}, <br>
+      NIF: ${formValues.companyNIF},
+      Legal Address: ${formValues.legalAddress},
+      Team Name: ${formValues.teamName}
+      `,
+    }).then((message: any) => alert(message));
+  }
 }
