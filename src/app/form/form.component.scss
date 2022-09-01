@@ -1,6 +1,6 @@
 .wrapper-form {
   padding: 100px 12px 100px 12px;
-  height: 100vh;
+  height: 100%;
 
   .register-form-intro {
     display: flex;
@@ -41,5 +41,52 @@
         font-weight: 100;
       }
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper-form {
+    padding: 20px;
+
+    .register-form-intro {
+      h4 {
+        font-size: 40px;
+      }
+    }
+
+    .register-form-form {
+      padding: 20px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      form {
+        padding: 10px;
+        label {
+          font-size: 15px;
+          padding: 5px 0px 0px 0px;
+          letter-spacing: 1px;
+          font-weight: 500;
+        }
+
+        input {
+          border: none;
+          border-bottom: 2px solid black;
+          margin-bottom: 20px;
+          padding: 5px 0px 5px 0px;
+          width: 100%;
+        }
+
+        input:focus {
+          outline-width: 0;
+        }
+
+        input::placeholder {
+          color: #c0c0c0;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+  .btn-padel-secondary {
+    margin: 0px 10px 10px 10px;
   }
 }
