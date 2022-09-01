@@ -4,14 +4,24 @@
       <div class="col-12 col-md-5 hero-header-title-btn">
         <h1 class="hero-header-title">
           LET'S PLAY
-          <div class="swing">#PADEL</div>
+          <div>#PADEL</div>
         </h1>
-
+        <div class="col-12 hidden-desktop">
+          <video
+            loop
+            muted
+            autoplay
+            oncanplay="this.play()"
+            onloadedmetadata="this.muted = true"
+            src="https://cdn.shopify.com/videos/c/o/v/a54067f0b40e4fcea54cc030db6c9993.mov"
+            width="100%"
+          ></video>
+        </div>
         <button class="btn-padel-secondary">JOIN NOW</button>
       </div>
       <div class="col-12 col-sm-7 hero-header-img">
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 hide-mobile">
             <video
               loop
               muted
@@ -22,7 +32,7 @@
               width="100%"
             ></video>
           </div>
-          <div class="col-6">
+          <div class="col-6 hide-mobile">
             <video
               loop
               muted
@@ -33,7 +43,7 @@
               width="100%"
             ></video>
           </div>
-          <div class="col-6">
+          <div class="col-6 hide-mobile">
             <video
               loop
               muted
@@ -44,7 +54,7 @@
               width="100%"
             ></video>
           </div>
-          <div class="col-6">
+          <div class="col-6 hide-mobile">
             <video
               loop
               muted

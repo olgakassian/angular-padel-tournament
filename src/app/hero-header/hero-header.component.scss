@@ -14,13 +14,14 @@ header {
     background-color: gray;
   }
 
-  div.col-6 {
+  div.col-md-6 {
     padding: 0px;
-    padding-right: 5px;
   }
 
-  .hero-header-img {
-    height: 400px;
+  div.col-6,
+  div.col-sm-6 {
+    padding: 0px;
+    padding-right: 5px;
   }
 
   .hero-header-title {
@@ -36,64 +37,44 @@ header {
     justify-content: center;
     align-items: flex-start;
   }
+
+  .hidden-desktop {
+    visibility: hidden;
+    display: none;
+  }
 }
 
-// @-webkit-keyframes swing {
-//   15% {
-//     -webkit-transform: translateY(100px);
-//     transform: translateY(100px);
-//   }
-//   30% {
-//     -webkit-transform: translateY(-100px);
-//     transform: translateY(-100px);
-//   }
-//   50% {
-//     -webkit-transform: translateY(3px);
-//     transform: translateY(3px);
-//   }
-//   65% {
-//     -webkit-transform: translateY(-3px);
-//     transform: translateY(-3px);
-//   }
-//   80% {
-//     -webkit-transform: translateY(2px);
-//     transform: translateY(2px);
-//   }
-//   100% {
-//     -webkit-transform: translateY(0);
-//     transform: translateY(0);
-//   }
-// }
-// @keyframes swing {
-//   15% {
-//     -webkit-transform: translateY(10px);
-//     transform: translateY(10px);
-//   }
-//   30% {
-//     -webkit-transform: translateY(-15px);
-//     transform: translateY(-15px);
-//   }
-//   50% {
-//     -webkit-transform: translateY(5px);
-//     transform: translateY(5px);
-//   }
-//   65% {
-//     -webkit-transform: translateY(-5px);
-//     transform: translateY(-5px);
-//   }
-//   80% {
-//     -webkit-transform: translateY(3px);
-//     transform: translateY(3px);
-//   }
-//   100% {
-//     -webkit-transform: translateY(0);
-//     transform: translateY(0);
-//   }
-// }
-// .swing:hover {
-//   color: #d8e144;
-//   -webkit-animation: swing 5s ease;
-//   animation: swing 1s ease;
-//   -webkit-animation-iteration-count: 1;
-//   animation-iteration-count: 1;
-// }
+@media (max-width: 600px) {
+  header {
+    height: 90vh;
+
+    .hidden-desktop {
+      visibility: visible;
+      display: flex;
+      margin: 30px 0px 30px 0px;
+    }
+
+    .hide-mobile {
+      visibility: hidden;
+      display: none;
+    }
+
+    .hero-header-title {
+      text-align: center;
+      font-size: 55px;
+      line-height: 60px;
+    }
+
+    .hero-header-title-btn {
+      align-items: center;
+    }
+
+    .hero-header-img {
+      padding: 20px;
+    }
+
+    .btn-padel-secondary {
+      margin-top: 10px;
+    }
+  }
+}
