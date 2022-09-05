@@ -21,113 +21,145 @@
       </div>
       <div>
         For any questions contact <br />
-        John Doe
+        Carolina Cerejo
         <br />
         <br />
-        info-evident@valtech.com <br />
-        +351 93 215 5400
+        carolina.cerejo@valtech.com <br />
+        21 585 5153
       </div>
     </div>
     <div class="col-12 col-sm-6 register-form-form">
-      <form [formGroup]="registerForm">
-        <div class="row">
-          <div class="col-12 col-sm-6">
-            <label for="companyName">COMPANY NAME </label> <br />
-            <input
-              id="companyName"
-              type="text"
-              formControlName="companyName"
-              placeholder="Valtech Portugal"
-            />
+      <ng-container *ngIf="!isEmailSent; else emailSent">
+        <form [formGroup]="registerForm">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <label for="companyName">COMPANY NAME* </label> <br />
+              <input
+                id="companyName"
+                type="text"
+                formControlName="companyName"
+                placeholder="Valtech Portugal"
+                required
+              />
+            </div>
+            <div class="col-12 col-sm-6">
+              <label for="companyNIF">NIF* </label> <br />
+              <input
+                id="companyNIF"
+                type="number"
+                formControlName="companyNIF"
+                placeholder="515888494"
+                required
+              />
+            </div>
           </div>
-          <div class="col-12 col-sm-6">
-            <label for="companyNIF">NIF </label> <br />
-            <input
-              id="companyNIF"
-              type="number"
-              formControlName="companyNIF"
-              placeholder="515888494"
-            />
+          <label for="legalAddress">LEGAL ADDRESS*</label> <br />
+          <input
+            id="legalAddress"
+            type="text"
+            formControlName="legalAddress"
+            placeholder="Campo Pequeno 48 7 andar, 1000-081 Lisboa"
+            required
+          />
+          <br />
+          <label for="teamName">TEAM NAME* </label> <br />
+          <input
+            id="teamName"
+            type="text"
+            formControlName="teamName"
+            placeholder="Cherifs"
+            required
+          />
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <label for="playerName1">PLAYER 1* </label> <br />
+              <input
+                id="playerName1"
+                type="text"
+                formControlName="playerName1"
+                placeholder="Francisco Brito"
+                required
+              />
+              <br />
+              <label for="playerName2">PLAYER 2* </label> <br />
+              <input
+                id="playerName2"
+                type="text"
+                formControlName="playerName2"
+                placeholder="Eduardo Carneiro"
+                required
+              />
+              <br />
+              <label for="playerName3">PLAYER 3 </label> <br />
+              <input
+                id="playerName3"
+                type="text"
+                formControlName="playerName3"
+                placeholder="Olga Kassian"
+              />
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <label for="playerEmail1">EMAIL 1* </label> <br />
+              <input
+                id="playerEmail1"
+                type="email"
+                formControlName="playerEmail1"
+                placeholder="francisco@valtech.com"
+                required
+              />
+              <br />
+              <label for="playerEmail2">EMAIL 2* </label> <br />
+              <input
+                id="playerEmail2"
+                type="email"
+                formControlName="playerEmail2"
+                placeholder="eduardo@valtech.com"
+                required
+              />
+              <br />
+              <label for="playerEmail3">EMAIL 3 </label> <br />
+              <input
+                id="playerEmail3"
+                type="email"
+                formControlName="playerEmail3"
+                placeholder="olga@valtech.com"
+              />
+            </div>
           </div>
-        </div>
-        <label for="legalAddress">LEGAL ADDRESS</label> <br />
-        <input
-          id="legalAddress"
-          type="text"
-          formControlName="legalAddress"
-          placeholder="Campo Pequeno 48 7 andar, 1000-081 Lisboa"
-        />
-        <br />
-        <label for="teamName">TEAM NAME </label> <br />
-        <input
-          id="teamName"
-          type="text"
-          formControlName="teamName"
-          placeholder="Cherifs"
-        />
-        <div class="row">
-          <div class="col-12 col-sm-6">
-            <label for="playerName1">PLAYER 1 </label> <br />
-            <input
-              id="playerName1"
-              type="text"
-              formControlName="playerName1"
-              placeholder="Francisco Brito"
-            />
-            <br />
-            <label for="playerName2">PLAYER 2 </label> <br />
-            <input
-              id="playerName2"
-              type="text"
-              formControlName="playerName2"
-              placeholder="Eduardo Carneiro"
-            />
-            <br />
-            <label for="playerName3">PLAYER 3 </label> <br />
-            <input
-              id="playerName3"
-              type="text"
-              formControlName="playerName3"
-              placeholder="Olga Kassian"
-            />
+          <label for="responsibleEmail"> RESPONSIBLE EMAIL* </label> <br />
+          <input
+            id="responsibleEmail"
+            type="text"
+            formControlName="responsibleEmail"
+            placeholder="melina@valtech.com"
+            required="true"
+          />
+          <br />
+
+          <div
+            class="error-message"
+            *ngIf="!isFormValid && registerForm.controls['playerEmail1'].errors?.['required'] && registerForm.controls['playerEmail2'].errors?.['required'] && registerForm.controls['responsibleEmail'].errors?.['required']"
+          >
+            *Please enter a valid email address
           </div>
 
-          <div class="col-12 col-sm-6">
-            <label for="playerEmail1">EMAIL 1 </label> <br />
-            <input
-              id="playerEmail1"
-              type="text"
-              formControlName="playerEmail1"
-              placeholder="francisco@valtech.com"
-            />
-            <br />
-            <label for="playerEmail2">EMAIL 2 </label> <br />
-            <input
-              id="playerEmail2"
-              type="text"
-              formControlName="playerEmail2"
-              placeholder="eduardo@valtech.com"
-            />
-            <br />
-            <label for="playerEmail3">EMAIL 3 </label> <br />
-            <input
-              id="playerEmail3"
-              type="text"
-              formControlName="playerEmail3"
-              placeholder="olga@valtech.com"
-            />
+          <div
+            class="error-message"
+            *ngIf="!isFormValid && (registerForm.controls['companyName'].errors?.['required'] || registerForm.controls['companyNIF'].errors?.['required'] || registerForm.controls['legalAddress'].errors?.['required'] || registerForm.controls['playerEmail1'].errors?.['required'] || registerForm.controls['playerName1'].errors?.['required'] || registerForm.controls['playerEmail2'].errors?.['required'] || registerForm.controls['playerName2'].errors?.['required'] || registerForm.controls['responsibleEmail'].errors?.['required'])"
+          >
+            *Please fill in all the fields
           </div>
+          <button class="btn-padel-secondary" (click)="submitForm()">
+            SUBMIT
+          </button>
+        </form>
+      </ng-container>
+      <ng-template #emailSent>
+        <div class="form-sent-message">
+          Thank you for your submission, <br />We'll get back to you soon :)
         </div>
-        <label for="responsibleEmail"> RESPONSIBLE EMAIL </label> <br />
-        <input
-          id="responsibleEmail"
-          type="text"
-          formControlName="responsibleEmail"
-          placeholder="melina@valtech.com"
-        />
-        <br />
-      </form>
-      <button class="btn-padel-secondary" (click)="submitForm()">SUBMIT</button>
+      </ng-template>
     </div>
   </div>
 </div>
