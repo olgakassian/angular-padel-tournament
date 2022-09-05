@@ -14,6 +14,11 @@ export class AppComponent {
 
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
+  updateValue(value: boolean) {
+    this.buttonState = value;
+    this.buttonClicked();
+  }
+
   buttonClicked() {
     this.buttonState = true;
     setTimeout(() => {
