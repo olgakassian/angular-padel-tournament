@@ -1,9 +1,12 @@
 section.wrapper-event-details {
   color: white;
-  margin: 150px 0px 150px 0px;
+  padding: 150px 0px 150px 0px;
   display: flex;
   align-items: center;
 
+  .btn-padel {
+    margin-top: 0px;
+  }
   .row {
     display: flex;
     justify-content: center;
@@ -59,7 +62,7 @@ section.wrapper-event-details {
 
 @media (max-width: 800px) {
   section.wrapper-event-details {
-    margin: 50px 0px 50px 0px;
+    padding: 50px 0px 50px 0px;
 
     .overflow-details-block {
       height: 400px;
@@ -80,6 +83,10 @@ section.wrapper-event-details {
 
     .register-button {
       position: absolute;
+    }
+
+    .btn-padel {
+      margin-top: 0px;
     }
   }
 }
