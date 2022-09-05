@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Helvetica Neue"),
+    url("https://fonts.cdnfonts.com/s/29136/HelveticaNeueBold.woff")
+      format("woff");
+}
 .wrapper-footer {
   font-family: "Sarabun", sans-serif;
   background-color: black;
@@ -7,6 +15,16 @@
   flex-direction: column;
   padding: 40px 50px 40px 50px;
   margin-top: 50px;
+
+  .organized {
+    font-size: 10px;
+  }
+
+  .valtech-portugal {
+    font-family: "Helvetica Neue";
+    font-weight: 700;
+    font-size: 40px;
+  }
 
   a {
     text-decoration: none;
