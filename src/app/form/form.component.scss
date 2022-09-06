@@ -16,6 +16,27 @@
     color: red;
   }
 
+  svg {
+    fill: black;
+    height: 30px;
+  }
+
+  .col-2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .included-items {
+    height: 60px;
+    width: 50%;
+    color: black;
+    padding: 5px 5px 5px 0px;
+    margin: 5px 5px 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .register-form-form {
     padding: 20px 0px 0px 0px;
     display: flex;
