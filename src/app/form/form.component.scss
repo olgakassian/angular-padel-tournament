@@ -1,5 +1,5 @@
 .wrapper-form {
-  padding: 100px 12px 100px 12px;
+  padding: 60px 12px 100px 12px;
   height: 100%;
 
   .register-form-intro {
@@ -28,7 +28,7 @@
 
   .included-items {
     height: 60px;
-    width: 50%;
+    width: 60%;
     color: black;
     padding: 5px 5px 5px 0px;
     margin: 5px 5px 5px 0px;
@@ -69,14 +69,36 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .wrapper-form {
+    height: 100%;
     padding: 20px;
 
     .register-form-intro {
       h4 {
         font-size: 40px;
       }
+    }
+
+    svg {
+      fill: black;
+      width: 45px;
+    }
+
+    .col-2 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .included-items {
+      height: 50px;
+      width: 100%;
+      color: black;
+      padding: 5px 5px 5px 0px;
+      margin: 5px 5px 5px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .register-form-form {

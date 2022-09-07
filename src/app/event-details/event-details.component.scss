@@ -65,11 +65,15 @@ section.wrapper-event-details {
     padding: 50px 0px 50px 0px;
 
     .overflow-details-block {
-      height: 400px;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
+    }
+
+    .description {
+      height: 100% !important;
     }
 
     video {
@@ -91,7 +95,7 @@ section.wrapper-event-details {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   section.wrapper-event-details {
     display: flex;
     align-items: center;
@@ -111,6 +115,7 @@ section.wrapper-event-details {
     }
 
     .description {
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -124,7 +129,7 @@ section.wrapper-event-details {
       justify-content: center;
       align-items: center;
       position: relative;
-      height: 300px !important;
+      height: 100% !important;
 
       video {
         position: absolute;
