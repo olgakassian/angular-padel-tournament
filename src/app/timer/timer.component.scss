@@ -1,18 +1,8 @@
-@media (max-width: 600px) {
-  .timer {
-    font-size: 1em !important;
-  }
-
-  .timer span {
-    margin: 0 5px 0 5px !important;
-  }
-}
-
 .timer {
   font-family: "Sarabun", sans-serif;
   background-color: black;
   color: white;
-  height: 200px;
+  height: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,11 +15,29 @@
   margin: 0 5px 0 30px;
 }
 
+.title {
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  background-color: #d8e144;
+  color: black;
+}
+
 .timer-block {
   display: flex;
   flex-direction: column;
   .timer-caption {
     font-size: 10px;
     letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .timer {
+    font-size: 1em !important;
+  }
+
+  .timer span {
+    margin: 0 5px 0 5px !important;
   }
 }
