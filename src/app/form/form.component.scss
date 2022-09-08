@@ -37,6 +37,16 @@
     justify-content: center;
   }
 
+  .inc-exc {
+    background-color: #d8e144;
+    margin-top: 15px;
+  }
+
+  .perks {
+    margin-left: 30px;
+    width: 60%;
+  }
+
   .register-form-form {
     padding: 20px 0px 0px 0px;
     display: flex;
@@ -85,6 +95,10 @@
       width: 45px;
     }
 
+    .perks {
+      margin-left: 30px;
+      width: 80%;
+    }
     .col-2 {
       display: flex;
       justify-content: center;
