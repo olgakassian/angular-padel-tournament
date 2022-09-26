@@ -39,9 +39,16 @@ export class FormComponent {
         Subject: `New Submission from ${formValues.companyName}`,
         Body: `
       Company Name: ${formValues.companyName}, <br>
-      NIF: ${formValues.companyNIF},
-      Legal Address: ${formValues.legalAddress},
-      Team Name: ${formValues.teamName}
+      NIF: ${formValues.companyNIF}, <br>
+      Legal Address: ${formValues.legalAddress}, <br>
+      Team Name: ${formValues.teamName}, <br>
+      Name 1: ${formValues.playerName1},<br>
+      Email 1: ${formValues.playerEmail1},<br>
+      Name 2: ${formValues.playerName2},<br>
+      Email 2: ${formValues.playerEmail2},<br>
+      Name 3: ${formValues.playerName3},<br>
+      Email 3: ${formValues.playerEmail3},<br>
+      Responsible Email: ${formValues.responsibleEmail}
       `,
       }).then((message: any) => {
         if (message === 'OK') {
